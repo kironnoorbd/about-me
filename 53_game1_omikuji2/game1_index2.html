@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>おみくじ２</title>
+
+  <!-- jQueryを使用（しよう）する。ドキュメント全体（ぜんたい）に雪（ゆき）を降らせる。 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <script src="js/game1_main2.js"></script>
+  <link rel="icon" href="game1_favicon2.ico">
+  <link rel="stylesheet" href="css/game1_styles2.css">
+</head>
+
+<body>
+    <div class = "back">
+        <button id="btn99" type="button" onclick="history.back()">back</button>
+    </div>
+  <header>今日の運勢（うんせい）は？</header>
+  <div id="omikuji" title = "大吉だといいね~">
+      <p id="btn1">おみくじ</p>
+      </div>
+  
+
+  <!-- jQuery snowfallを使って（つかって）雪（ゆき）を降らせる（ふらせる） -->
+  <script src="js/snowfall.jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(document).snowfall({
+        maxSpeed : 5, // 最大速度
+        minSpeed : 1, // 最小速度
+        maxSize  : 20, // 最大サイズ
+        minSize  : 1, // 最小サイズ
+        image : "img/sakura_hanabira.png"
+      });
+    });
+  </script>
+
+  <footer>
+    <p>桜（さくら）バージョンです！</p>
+  </footer>
+</body>
+
+</html>

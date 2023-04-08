@@ -1,0 +1,51 @@
+@charset "utf-8";
+.f-container{
+   
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0px;
+    padding: 0.1em;
+    color: rgb(253, 105, 105);
+    background: rgba(100, 252, 214, 0.7);
+    
+}
+
+
+.f-item{
+   
+    margin: 0px;
+}
+@media screen and (max-width: 480px) {
+
+h1{
+    font-size: 100%;
+
+}
+.f-container{
+   
+    flex-flow: column;
+}
+.f-item{
+    font-size: 80%;
+    border-bottom: 0.1em;
+}				
+.f-item a {
+    height: 10px;
+}	
+}			
+.f-item a{
+   
+    display: block;
+    padding: 0.8em 1.0em;
+    color: rgb(7, 0, 6);
+    text-decoration: none;
+    border-radius: 0.5em;
+}
+.f-item a:hover{
+    background: #ff9853;
+    color: #990033;
+}	
+.f-item a:active{
+    background: #fcc207;
+    color: #990033;
+}			

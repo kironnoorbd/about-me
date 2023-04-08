@@ -1,0 +1,434 @@
+@charset "utf-8";
+html {
+    font-size: 60%;
+}
+body{
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem; 
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    margin: auto;
+    background-image:url(../img/backround1.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+   
+}
+.image {
+    margin: 20px 0;
+    text-align: center;
+
+  }
+h1 {
+    
+    font-size:35px; 
+    color: rgb(247, 214, 71);
+    background-color: #ca7af0;
+   
+}
+h2 {
+ 
+  color: rgb(245, 57, 166);
+    
+}
+
+p{
+  font-size: 30px;
+  color: rgb(109, 36, 151);
+}
+.p01{
+    font-size: 35px;
+    color: #00ffff;
+}
+
+h2 > span:nth-child(1) {
+    animation: neonBlink 5s infinite;
+    }
+    h2 > span:nth-child(2) {
+        opacity: .5;  
+      }
+      h2 > span:nth-child(3) {
+        animation: neonBlink 5s infinite;
+      }
+      h2 > span:nth-child(4) {
+        opacity: .5; 
+      }
+     
+      h2 > span:nth-child(5) {
+        animation: neonBlink 4s infinite; 
+        }
+      h2 > span:nth-child(6) {
+        opacity: .4;
+      } 
+     h2 > span:nth-child(7) {
+        animation: neonBlink 4s infinite; 
+            }
+     h2 > span:nth-child(8) {
+        opacity: .4;
+      } 
+    h2 > span:nth-child(9) {
+        animation: neonBlink 4s infinite; 
+      }
+    h2 > span:nth-child(10) {
+        opacity: .4;
+     } 
+    h2 > span:nth-child(11) {
+        animation: neonBlink 4s infinite; 
+     }
+    h2 > span:nth-child(12) {
+       opacity: .4;
+     } 
+    h2 > span:nth-child(13) {
+       animation: neonBlink 4s infinite; 
+     }
+     
+
+      
+      @keyframes neonBlink {
+      0% { opacity: 1; }
+      10% { opacity: .6; }
+      12% { opacity: 1; }
+      15% { opacity: .4; }
+      17% { opacity: 1; }
+      18% { opacity: .3; }
+      19% { opacity: 1; }
+      89% { opacity: 1; }
+      91% { opacity: .7; }
+      94% { opacity: 1; }
+      100% { opacity: 1; }
+      }
+      @keyframes neonBlur {
+      0% { text-shadow: 0px 0px 25px rgb(255, 145, 0); }
+      50% { text-shadow: 0px 0px 75px rgb(143, 151, 221); filter: blur(0.5px) }
+      100% { text-shadow: 0px 0px 25px rgb(100, 119, 224); }
+      }
+h3 {
+    font-size: 25px;
+    
+    text-align:center;
+    color: rgb(0, 0, 0);
+}
+td{
+   line-height:2.5em;
+   background-color: rgb(250,235,215, 0.6);
+   font-size: 15px;
+}
+
+
+
+footer {
+    position: relative;
+    height: 60px;
+    background-color: rgb(250,235,215, 0.6);
+    }
+    .footer-text {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    overflow: hidden;
+    color: rgba(255, 49, 152, 0.767);
+    font-size: 20px;
+    white-space: nowrap;
+    animation-name: footer-move;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+    
+    @keyframes footer-move {
+      from {
+      left: 0px;
+      }
+      to {
+      left: -140px;
+      }
+      }
+      .table01{
+        text-align:center;
+        margin:auto;
+        
+       }
+       .table02{
+        text-align:center;
+        margin: auto;
+       }
+       .image01 img{
+        width:300px;
+        max-width:100%;
+        height: auto;
+      }
+      .image02 img{
+        width:300px;
+        max-width:100%;
+        height: auto;
+      }
+.h3{
+   text-align: auto; 
+    color:  rgb(20,20,20);
+    font-size:25px;
+    
+}
+.note{
+  font-style: italic;
+  font-weight: bold;
+}
+.editorial{
+  background: rgba(255, 0, 0, 0.25)
+}
+.container01, .container02, .container03, .footer-text{
+  margin: 0.5em, 0em, 0em 0em;
+}
+      
+.shutter{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  margin: 0em;
+  padding: 0em;
+  background-color: #1e1e1e;
+  animation: byeShutter 2.6s forwards;
+
+}
+  .shutter::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    margin: auto;
+    padding: 0em;
+    background-color:  #fff;
+    animation: shutterOpen 2.6s forwards;
+  
+}
+      
+@keyframes byeShutter{
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+@keyframes shutterOpen{
+  0% {
+    width: 0;
+    height: 0.05em;
+  }
+  50% {
+    width: 100%;
+    height: 0.05em;
+  }
+  90% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width:100%;
+    height: 100%;
+  }
+}
+
+/* Twitter */
+.font01{
+  color: rgb(55, 66, 228);
+  font-size: 3em;
+}
+.font01:hover {/*ホバー時*/
+  color: #385188;/*文字色*/
+  transition: .5s;/*ゆっくり変化*/
+}
+
+/* Facebook */
+.font02{
+  color: rgb(74, 56, 138);
+  font-size: 3em;
+}
+.font02:hover {/*ホバー時*/
+  color: #4263aa;/*文字色*/
+  transition: .5s;/*ゆっくり変化*/
+}
+
+/* Instagram */
+.font03{
+  color: rgb(245, 182, 48);
+  font-size: 3em;
+}
+.font03:hover {/*ホバー時*/
+  color: #3b4f7c;/*文字色*/
+  transition: .5s;/*ゆっくり変化*/
+}
+
+/* YouTube */
+.font04{
+  color: rgb(221, 40, 40);
+  font-size: 3em;
+}
+.font04:hover {/*ホバー時*/
+  color: #ca3434;/*文字色*/
+  transition: .5s;/*ゆっくり変化*/
+}
+
+/* footer left */
+.font05{
+  color: yellow;
+}
+/* footer right */
+.font06{
+  color: yellow;
+}
+/*****************************/
+/* class="cat-container02"   */
+/*****************************/
+/* Touch Cat! partⅡ */
+.cat-container02{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.cat-block02{
+  position: relative;
+  width: 16em;
+  height: 22em;
+  margin-left:2em;
+  margin-right: 2em;
+}
+.cat-block02 p {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+/*----- 画像をマスクして文字拡大 -----*/
+.cat-item02_1{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 16em;
+  height: 16em;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none; 
+}
+.cat-item02_1 img{
+  width: 16em;
+  height: 16em;
+  object-fit: cover;
+}
+.cat-item02_1 .caption {
+  padding-top: 7em;
+  font-size: 1em;
+  text-align: center;
+  color:	white;
+}
+
+.cat-item02_1  .mask {
+  position: absolute;	/* 絶対位置指定 */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.7);	/* マスクは半透明 */
+  transition: all 0.5s ease-out;
+  opacity: 0; /* マスクを表示しない */
+}
+.cat-item02_1:hover  .mask {
+  transform: scale(4);   /* 4倍に拡大 */
+  opacity: 1; /* マスクを表示する */
+}
+
+/*----- 上からスライドして画像をマスク -----*/
+.cat-item02_2{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 16em;
+  height: 16em;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none; 
+}
+.cat-item02_2 img{
+  width: 16em;
+  height: 16em;
+  object-fit: cover;
+}
+.cat-item02_2 .caption {
+  padding-top: 7em;
+  font-size: 1em;
+  text-align: center;
+  color:	white;
+}
+.cat-item02_2  .mask {
+  position: absolute;	/* 絶対位置指定 */
+  width: 100%;
+  height: 100%;
+  top: -110%;	/* 枠の上に置いて表示させない */
+  left: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.7);	/* マスクは半透明 */
+  transition: all 1s ease;
+}
+.cat-item02_2:hover .mask {
+  top: 0;	/* 下に降りてくるように見せる */
+}
+
+
+/*----- 横に１８０度回転して画像をマスク -----*/
+.cat-item02_3{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 16em;
+  height: 16em;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none; 
+}
+.cat-item02_3 img{
+  width: 16em;
+  height: 16em;
+  object-fit: cover;
+}
+.cat-item02_3 .caption {
+  padding-top: 7em;
+  font-size: 1em;
+  text-align: center;
+  color:	white;
+}
+.cat-item02_3  .mask {
+position: absolute;	/* 絶対位置指定 */
+  width: 100%;
+  height: 100%;
+  top: 0;	/* 枠の上に置いて表示させない */
+  left: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.7);	/* マスクは半透明 */
+  transform:	rotateY(-180deg);
+  transition: all 3s ease;
+  opacity: 0; /* 表示させない */
+}
+.cat-item02_3:hover .mask {
+  transform: rotateY(0deg) scale(3);
+  opacity: 1; /* ホバーで表示する */
+}
+
+
+
